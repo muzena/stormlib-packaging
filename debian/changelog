@@ -1,0 +1,19 @@
+stormlib (9.23-3~kinetic) kinetic; urgency=emergency
+
+  * New upstream release 9.23
+
+ -- Goran Vidovic (gogo) <trebelnik2@gmail.com.com>  Sun, 24 Jul 2022 11:13:04 +0200
+
+stormlib (9.21-1~precise) precise; urgency=low
+
+  * New upstream release 9.21
+  * Remove static linked library from libstorm-dev
+  * Compile without pie hardening (shared library is already pic)
+
+ -- Pali Rohár <pali.rohar@gmail.com>  Tue, 13 Dec 2016 00:08:44 +0100
+
+stormlib (9.20-1) unstable; urgency=low
+
+  * Initial release (Closes: #819380)
+
+ -- Pali Rohár <pali.rohar@gmail.com>  Thu, 19 May 2016 18:37:14 +0200

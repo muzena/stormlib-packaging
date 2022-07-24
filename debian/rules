@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all,-pie
+export DPKG_GENSYMBOLS_CHECK_LEVEL=0
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure -- -DWITH_LIBTOMCRYPT=ON -DBUILD_SHARED_LIBS=ON
